@@ -8,123 +8,136 @@
   <body>
     <h1>Calculadora de Resistencia Electrica</h1>
     <label>Coordenadas en m: </label>
-    <input type="text" id="coordenate-1"/>
-    <input type="text" id="coordenate-2"/>
-    <input type="text" id="coordenate-3"/>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <header>
+    <h1 class="title" >Calculadora de Resistencia Electrica</h1>
+    </header>
+
+
+    <section class="coordinates">
+
+    <label class="coordinatesm_title" >Coordenadas en m: </label>
+    <input class="coordinatesm_input" type="text" id="coordenate-1"/>
+    <input class="coordinatesm_input" type="text" id="coordenate-2"/>
+    <input class="coordinatesm_input" type="text" id="coordenate-3"/>
+
+    </section>
 
     <div class="container-charge">
-      <label for="charge-one">Q1: </label>
+      <label class="charge-title" for="charge-one">Q1: </label>
 
-      <input type="text" id="input-charge-one"/>
+      <input class="charge-inputQ" type="text" id="input-charge-one"/>
 
       <select name="options-charge" id="select-charge-one">
-        <option value="mC">mC</option>
-        <option value="µC">µC</option>
-        <option value="nC">nC</option>
+        <option class="coulomb-unit" value="mC">mC</option>
+        <option class="coulomb-unit" value="µC">µC</option>
+        <option class="coulomb-unit" value="nC">nC</option>
       </select>
 
-      <input type="text" id="firstvalue-c1"/>
-      <input type="text" id="secondvalue-c1"/>
-      <input type="text" id="thirdvalue-c1"/>
+      <input class="charge-input_value" type="text" id="firstvalue-c1"/>
+      <input class="charge-input_value" type="text" id="secondvalue-c1"/>
+      <input class="charge-input_value" type="text" id="thirdvalue-c1"/>
 
       <select name="" id="selectm-charge-one">
-        <option value="">m</option>
-        <option value="">yd</option>
-        <option value="">ft</option>
-        <option value="">in</option>
+        <option class="charge_measures"  value="m">m</option>
+        <option class="charge_measures"  value="yd">yd</option>
+        <option class="charge_measures"  value="ft">ft</option>
+        <option class="charge_measures"  value="in">in</option>
       </select>
     </div>
 
     <div class="container-charge">
-      <label for="charge-two">Q2: </label>
+      <label class="charge-title" for="charge-two">Q2: </label>
 
-      <input type="text" id="input-charge-two"/>
+      <input class="charge-inputQ" type="text" id="input-charge-two"/>
 
       <select name="" id="select-charge-two">
-        <option value="">mC</option>
-        <option value="">µC</option>
-        <option value="">nC</option>
+        <option class="coulomb-unit" value="mC">mC</option>
+        <option class="coulomb-unit" value="µC">µC</option>
+        <option class="coulomb-unit" value="nC">nC</option>
       </select>
 
-      <input type="text" id="firstvalue-c2"/>
-      <input type="text" id="secondvalue-c2"/>
-      <input type="text" id="thirdvalue-c2"/>
+      <input class="charge-input_value" type="text" id="firstvalue-c2"/>
+      <input class="charge-input_value" type="text" id="secondvalue-c2"/>
+      <input class="charge-input_value" type="text" id="thirdvalue-c2"/>
 
       <select name="" id="selectm-charge-two">
-        <option value="">m</option>
-        <option value="">yd</option>
-        <option value="">ft</option>
-        <option value="">in</option>
+        <option class="charge_measures"  value="m">m</option>
+        <option class="charge_measures"  value="yd">yd</option>
+        <option class="charge_measures"  value="ft">ft</option>
+        <option class="charge_measures"  value="in">in</option>
       </select>
     </div>
 
     <div class="container-charge">
-      <label for="charge-three">Q3: </label>
+      <label class="charge-title" for="charge-three">Q3: </label>
 
-      <input type="text" id="input-charge-three"/>
+      <input class="charge-inputQ" type="text" id="input-charge-three"/>
 
-      <select name="" id="select-charge-three">
-        <option value="">mC</option>
-        <option value="">µC</option>
-        <option value="">nC</option>
+      <select class="charge-select" name="" id="select-charge-three">
+        <option class="coulomb-unit" value="mC">mC</option>
+        <option class="coulomb-unit" value="µC">µC</option>
+        <option class="coulomb-unit" value="nC">nC</option>
       </select>
 
-      <input type="text" id="firstvalue-c3"/>
-      <input type="text" id="secondvalue-c3"/>
-      <input type="text" id="thirdvalue-c3"/>
+      <input class="charge-input_value" type="text" id="firstvalue-c3"/>
+      <input class="charge-input_value" type="text" id="secondvalue-c3"/>
+      <input class="charge-input_value" type="text" id="thirdvalue-c3"/>
 
       <select name="" id="selectm-charge-three">
-        <option value="">m</option>
-        <option value="">yd</option>
-        <option value="">ft</option>
-        <option value="">in</option>
+        <option class="charge_measures" value="m">m</option>
+        <option class="charge_measures"  value="yd">yd</option>
+        <option class="charge_measures"  value="ft">ft</option>
+        <option class="charge_measures"  value="in">in</option>
       </select>
     </div>
 
     <div class="container-charge">
-      <label for="charge-four">Q4: </label>
+      <label class="charge-title" for="charge-four">Q4: </label>
 
-      <input type="text" id="input-charge-four"/>
+      <input class="charge-inputQ" type="text" />
 
       <select name="" id="select-charge-four">
-        <option value="">mC</option>
-        <option value="">µC</option>
-        <option value="">nC</option>
+        <option class="coulomb-unit" value="mC">mC</option>
+        <option class="coulomb-unit" value="µC">µC</option>
+        <option class="coulomb-unit" value="nC">nC</option>
       </select>
 
-      <input type="text" id="firstvalue-c4"/>
-      <input type="text" id="secondvalue-c4/>
-      <input type="text" itemid="thirdvalue-c4"/>
+      <input class="charge-input_value" type="text" id="firstvalue-c4"/>
+      <input class="charge-input_value" type="text" id="secondvalue-c4"/>
+      <input class="charge-input_value" type="text" id="thirdvalue-c4"/>
 
       <select name="" id="selectm-charge-four">
-        <option value="">m</option>
-        <option value="">yd</option>
-        <option value="">ft</option>
-        <option value="">in</option>
+        <option class="charge_measures"  value="m">m</option>
+        <option class="charge_measures"  value="yd">yd</option>
+        <option class="charge_measures"  value="ft">ft</option>
+        <option class="charge_measures"  value="in">in</option>
       </select>
       
     </div>
 
     <div class="container-charge">
-      <label for="charge-five">Q5: </label>
+      <label class="charge-title" for="charge-five">Q5: </label>
 
-      <input type="text" id="input-charge-five"/>
+      <input class="charge-inputQ" type="text" id="input-charge-five"/>
 
-      <select name="" id="select-charge-five">
-        <option value="">mC</option>
-        <option value="">µC</option>
-        <option value="">nC</option>
+      <select name="select" id="select-charge-five">
+        <option class="coulomb-unit" value="mC">mC</option>
+        <option class="coulomb-unit" value="µC">µC</option>
+        <option class="coulomb-unit" value="nC">nC</option>
       </select>
 
-      <input type="text" id="firstvalue-c5"/>
-      <input type="text" id="secondvalue-c5"/>
-      <input type="text" id="thirdvalue-c5"/>
+      <input class="charge-input_value" type="text" id="firstvalue-c5"/>
+      <input class="charge-input_value" type="text" id="secondvalue-c5"/>
+      <input class="charge-input_value" type="text" id="thirdvalue-c5"/>
 
-      <select name="" id="selectm-charge-five">
-        <option value="">m</option>
-        <option value="">yd</option>
-        <option value="">ft</option>
-        <option value="">in</option>
+      <select name="selectm" id="selectm-charge-five">
+        <option class="charge_measures"  value="m">m</option>
+        <option class="charge_measures"  value="yd">yd</option>
+        <option class="charge_measures"  value="ft">ft</option>
+        <option class="charge_measures"  value="in">in</option>
       </select>
     </div>
 
