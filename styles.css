@@ -1,5 +1,139 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container-main {
+    width: 80%;
+    max-width: 80rem;
+    height: auto;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .coordinates {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coordinatesm_title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  .coordinates-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .coordinatesm_input {
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .coordinatesm_input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .coordinatesm_input:hover {
+    border-color: #007bff;
+  }
+  
+  .container-charge {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .charge-title {
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .charge-inputQ, .charge-input_value {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .charge-inputQ:hover, .charge-input_value:hover {
+    border-color: #007bff;
+  }
+  
+  .charge-inputQ:focus, .charge-input_value:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .coulomb-unit, .charge_measures {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .coulomb-unit:hover, .charge_measures:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button#btn-calcular {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#btn-calcular:hover {
+    background-color: #218838;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
