@@ -14,7 +14,7 @@ action_calculate.addEventListener('click', () => {
 
         alert('Debes ingresar números')
     } else {
-        associateValues()
+        associateValuesCharge()
     }
 
 })
