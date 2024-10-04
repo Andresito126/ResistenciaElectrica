@@ -165,19 +165,52 @@ document.addEventListener('DOMContentLoaded', () => {
     let calculateE = (objectCoordenate) => {
         let renderHTML = document.getElementById('result-html');
         let result = [];
-
+        let stepsHTML = '';
+    
         for (let i = 0; i < 5; i++) {
             let charge = objectCoordenate.charges[i];
             let coord = objectCoordenate.coordenates[`convertedCoordenatesQ${i + 1}`];
-
+    
             let dx = coordenate1 - coord[0];
             let dy = coordenate2 - coord[1];
             let dz = coordenate3 - coord[2];
 
-            result.push((charge * dx + 'ax') + (charge * dy + 'ay') + (charge * dz + 'az')) / Math.pow((Math.pow(dx, 2) + Math.pow(dy, 2) + Math.pow(dz, 2)), 3 / 2);
+            // Cálculo de distancia entre cargas
+        let distance = Math.sqrt(Math.pow(dx, 2) + Math.pow(dy, 2) + Math.pow(dz, 2));
+        let denominator = Math.pow(distance, 3 / 2);
+
+        let numeradorX = charge * dx;
+        let numeradorY = charge * dy;
+        let numeradorZ = charge * dz;
+
+         // Cálculo del numerador completo (suma de los tres componentes)
+         let numeradorCompleto = `${numeradorX} ax + ${numeradorY} ay + ${numeradorZ} az`;
+
+          // Cálculo del resultado intermedio (numerador / denominador)
+        let resultadoIntermedio = (numeradorX + numeradorY + numeradorZ) / denominator;
+
+         // Agregamos pasos intermedios aún más detallados
+         stepsHTML += `<br> <h4>Carga ${i + 1}</h4>
+         <p><strong>Diferencias de coordenadas:</strong> dx: ${dx.toFixed(3)}, dy: ${dy.toFixed(3)}, dz: ${dz.toFixed(3)}</p> <br>
+         <p><strong>Distancia (r):</strong> ${distance.toFixed(3)}</p> <br>
+         <p><strong>Denominador (r^3/2):</strong> ${denominator.toFixed(3)}</p> <br>
+         <p><strong>Numerador en X:</strong> ${numeradorX.toFixed(3)}</p>
+         <p><strong>Numerador en Y:</strong> ${numeradorY.toFixed(3)}</p>
+         <p><strong>Numerador en Z:</strong> ${numeradorZ.toFixed(3)}</p> <br>
+         <p><strong>Numerador Completo:</strong> ${numeradorCompleto}</p> <br>
+         <p><strong>Resultado Intermedio:</strong> ${resultadoIntermedio.toFixed(3)}</p> <br>`;
+
+    
+            result.push((charge * dx + ' ax') + (charge * dy + ' ay') + (charge * dz + ' az')) / Math.pow((Math.pow(dx, 2) + Math.pow(dy, 2) + Math.pow(dz, 2)), 3 / 2);
         }
-        
-        renderHTML.innerHTML = result;
+    
+        renderHTML.innerHTML = `<h2>RESULTADO:</h2>` + result.map((res, index) => 
+            `<div style="margin-bottom: 15px;">
+                <strong>Carga ${index + 1}:</strong> 
+                <span style="color: #2C3E50;">${res}</span>
+             </div>`).join('');
+
+             renderHTML.innerHTML += `<h3>Pasos del Cálculo:</h3>` + stepsHTML;
     };
 
 });

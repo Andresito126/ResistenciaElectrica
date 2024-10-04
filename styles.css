@@ -137,3 +137,18 @@
     outline: none;
   }
   
+  #result-html {
+    font-family: Arial, sans-serif; 
+    background-color: #F4F4F4; 
+    padding: 15px; 
+    border-radius: 8px; 
+    border: 1px solid #BDC3C7;
+}
+
+strong {
+    color: #E74C3C; 
+}
+
+span {
+    font-weight: bold; 
+}
